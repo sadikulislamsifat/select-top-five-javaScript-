@@ -1,0 +1,87 @@
+
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/download.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    
+}
+.header-logo{
+    width: 35%;
+}
+.header-logo img{
+    height: 100%;
+}
+.header-title{
+    width: 60%;
+}
+header h1{
+    color: orangered;
+    font-size: 95px;
+    margin-top: 120px;
+    text-align: center;
+}
+.main-container{
+    background-color: rgba(11, 11, 11, 0.995);
+    padding: 10%;
+}
+.borderC{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.section-container{
+    display: flex;
+    
+    
+}
+.card-wh{
+    height: 450px;
+}
+.player-list h2{
+    margin-bottom: 35px;
+}
+.player-list{
+    width: 100%;
+    height: 370px;
+}
+
+ol li{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.card-images{
+    width: ;
+}
+.card-container{
+    width: 75%;
+}
+.calculate-container{
+    width: 25%;
+}
+.card-img{
+    width: 100%;
+    height: 500px;
+}
+.inputC{
+    width: 80px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+}
+.footerC{
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.footerC p{
+    padding-top: 90px;
+}
+.hrc{
+    border: 2px solid white;
+}
+
