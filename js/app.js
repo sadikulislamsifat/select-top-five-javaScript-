@@ -1,5 +1,7 @@
 
-
+ function selectPlayer(){
+   console.log('I Love You Sadia')
+ }
 
 
 
