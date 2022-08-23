@@ -39,7 +39,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn btn-primary fw-semibold fs-5 w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn btn-primary fw-semibold fs-5 w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn btn-primary fw-semibold fs-5 w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn btn-primary fw-semibold fs-5 w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn btn-primary fw-semibold fs-5 w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn btn-primary fw-semibold fs-5 w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn fw-semibold fs-5 btn-primary w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn fw-semibold fs-5 btn-primary w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn fw-semibold fs-5 btn-primary w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn fw-semibold fs-5 btn-primary w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
                   <p class="card-text">36 Goals . 120 Assist</p>
                 </div>
                 <div class="card-footer text-center">
-                  <button onclick="selectPlayer()" class="btn btn-primary fw-semibold fs-5 w-75">Select </button>
+                  <button onclick="selectPlayer(this)" class="btn btn-primary fw-semibold fs-5 w-100">Select </button>
                 </div>
               </div>
             </div>
@@ -112,14 +112,14 @@
 
           <div class="player-list">
             <div class="bg-black p-4 h-100 w-100 text-white ms-4">
-              <h2 class="text-center">Selected - V</h2>
+              <h2 class="text-center">Selected - <span id="selected">V</span></h2>
               <hr class="borderC">
-              <ol>
-                <li>Lionel Messi</li>
+              <ol id="player-list">
+                <!-- <li>Lionel Messi</li>
                 <li>Neymar JR.</li>
                 <li>Kylian Mbappé</li>
                 <li>Cristiano Ronaldo</li>
-                <li>Ángel Di María</li>
+                <li>Ángel Di María</li> -->
               </ol>
 
             </div>
@@ -133,9 +133,9 @@
 
               <div class="d-flex justify-content-between">
                 <h5>Per Player</h5>
-                <input class="inputC" type="text" placeholder="Amount" >
+                <input id="per-player" class="inputC" type="text" placeholder="Amount" >
               </div>
-              <button class="btn btn-primary w-100 mt-3 fw-semibold fs-5 rounded-0">Calculate</button>
+              <button id="calculate" class="btn btn-primary w-100 mt-3 fw-semibold fs-5 rounded-0">Calculate</button>
               <div class="d-flex justify-content-between mt-4">
                 <h5>Player Expenses</h5>
                <h5>$<span id="player-expenses">5000</span></h5>
