@@ -10,12 +10,17 @@
       const li = document.createElement("li");
       li.innerText = name;
       playerList.appendChild(li);
+
+      
     }
   }
 
  function selectPlayer(event){
    const playerName = event.parentNode.parentNode.children[1].children[0].innerText;
-  //  event.target.disabled = true;
+   if(player.length >= 5){
+    event.target.disabled = true;
+    
+   }
   //  event.target.style.background = "skyblue";
   //  const playerList = document.getElementById('player-list');
    
@@ -27,6 +32,8 @@
    const totalSelectedPlayer = document.getElementById('selected').innerText = player.length;
    
   setPlayer(playerName);
+
+  
    
  };
 
