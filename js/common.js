@@ -6,7 +6,13 @@ function getInputValueById(inputId){
     const inputValueString = inputValue.value ;
     const inputAmount = parseFloat(inputValueString);
     inputValue.value = '';
-    return inputAmount;
+
+    if(inputAmount >= 0){
+        return inputAmount;
+
+    }else{
+        alert('please Enter Valid Number')
+    }
 
 }
 
