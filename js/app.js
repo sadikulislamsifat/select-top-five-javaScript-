@@ -4,6 +4,11 @@
 
   function setPlayer(player){
     const playerList = document.getElementById('player-list');
+
+
+    // button disabled 
+   event.target.disabled = true;
+
     
     for(let i = 1; i < 2; i++){
       const name = player;
@@ -18,6 +23,7 @@
  function selectPlayer(event){
    const playerName = event.parentNode.parentNode.children[1].children[0].innerText;
   //  console.log(playerName.target.disabled)
+  
    if(player.length >= 5){
     alert("please you can't take no more player")
     event.target.disabled = true;
@@ -26,9 +32,7 @@
    
    player.push(playerName);
 
-     
-
-   const totalSelectedPlayer = document.getElementById('selected').innerText = player.length;
+    const totalSelectedPlayer = document.getElementById('selected').innerText = player.length;
   
    
   setPlayer(playerName);
