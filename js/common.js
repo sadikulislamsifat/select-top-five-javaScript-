@@ -26,7 +26,7 @@ function getElementValueById(elementId){
 };
 
 
-// element value
+// set element value
 function setElementValueById(element, value){
     const elementName = document.getElementById(element);
     elementName.innerText = value;
